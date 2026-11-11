@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.todo-box {
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #333333;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.add-area {
+  display: flex;
+  gap: 8px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #666666;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #666666;
+  background-color: #dddddd;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cccccc;
+}
+
+#addButton {
+  background-color: #81c784;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.edit-button {
+  background-color: #90caf9;
+}
+
+.delete-button {
+  background-color: #e57373;
+}
+
+#emptyMessage {
+  text-align: center;
+  color: #666666;
+}

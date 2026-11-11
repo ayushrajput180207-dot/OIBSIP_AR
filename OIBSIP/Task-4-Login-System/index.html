@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-box">
+      <h1>Login Authentication System</h1>
+
+      <p id="message"></p>
+
+      <div id="loggedOutBox">
+        <div class="form-box">
+          <h2>Register</h2>
+          <form id="registerForm">
+            <label for="registerUsername">Username</label>
+            <input
+              type="text"
+              id="registerUsername"
+              placeholder="3 to 20 letters, numbers or _"
+              required
+            />
+
+            <label for="registerPassword">Password</label>
+            <input
+              type="password"
+              id="registerPassword"
+              placeholder="At least 6 characters"
+              required
+            />
+
+            <button type="submit">Register</button>
+          </form>
+        </div>
+
+        <div class="form-box">
+          <h2>Login</h2>
+          <form id="loginForm">
+            <label for="loginUsername">Username</label>
+            <input type="text" id="loginUsername" required />
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required />
+
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="loggedInBox" class="form-box hidden">
+        <h2>Welcome, <span id="welcomeName"></span>!</h2>
+        <p>
+          You are logged in. This page is only shown after a successful login.
+        </p>
+        <button id="logoutButton">Logout</button>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
